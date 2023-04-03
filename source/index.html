@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <a class="logo" href="index.html">
+      <img class="logo__image" src="../source/img/logo-mobile.svg" width="34" height="38" alt="Логотип: Кэт энерджи.">
+      <img class="logo__text" src="../source/img/logo-text.svg" width="101" height="18" alt="Логотип: Кэт энерджи.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">Главная</li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</body>
+
 </html>
