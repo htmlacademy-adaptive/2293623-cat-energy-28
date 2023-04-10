@@ -1,1 +1,54 @@
 // Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@import "../less/blocks/main-header.less";
+@import "../less/blocks/main-nav.less";
+@import "../less/blocks/main-nav__list.less";
+@import "../less/blocks/hero.less";
+@import "../less/blocks/primary-button.less";
+
+body {
+  margin: 0;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  width: 320px;
+  min-height: 100%;
+  color: #000000;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
