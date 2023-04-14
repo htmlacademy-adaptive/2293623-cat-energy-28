@@ -1,0 +1,40 @@
+.hero__backphoto {
+  background-image: url("../../img/index-background-cat.jpg");
+  width: 320px;
+  height: 302px;
+  margin-bottom: 140px;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background: rgba(104, 183, 56, 0.85);
+    transform: translateX(-50%);
+    content: "";
+  }
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__image {
+  position: absolute;
+  transform: translateY(-102%);
+  left: 20px;
+}
+
+.hero__button {
+  display: block;
+  margin: 0 20px;
+  min-width: 280px;
+  text-align: center;
+  box-sizing: border-box;
+}
