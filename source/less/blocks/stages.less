@@ -10,3 +10,24 @@
 .stages__list-item {
   padding-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .stages {
+    min-height: 689px;
+  }
+
+  .stages__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stages {
+    min-height: 372px;
+  }
+
+  .stages__list {
+    display: flex;
+  }
+}
