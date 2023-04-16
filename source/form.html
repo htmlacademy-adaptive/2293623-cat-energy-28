@@ -69,45 +69,47 @@
     <h1 class="main-heading">Подбор программы</h1>
     <form class="main-form-container__person form" action="https://echo.htmlacademy.ru/" method="get">
       <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form-about">
-        <label class="form-about__pet">
-          Имя:*
-          <input class="form-about__pet-field" type="text" name="nickname" value="Барсик" required>
-        </label>
-        <label class="form-about__pet">
-          Вес (кг):*
-          <input class="form-about__pet-field" type="number" name="kg" value="7" required>
-        </label>
-        <label class="form-about__pet">
-          Возраст (лет):*
-          <input class="form-about__pet-field" type="number" name="years-old" value="7">
-        </label>
-      </fieldset>
-      <fieldset class="form-program">
-        <ul class="form-program__list">
-          <li class="form-program__list-item desired-program">
-            <label class="desired-program__control">
-              <input class="desired-program__control-input" type="radio" name="product-group" value="slim" checked>
-              <span class="desired-program__control-mark"></span>
-              <span class="desired-program__control-span">Похудение</span>
-            </label>
-          </li>
-          <li class="form-program__list-item desired-program">
-            <label class="desired-program__control">
-              <input class="desired-program__control-input" type="radio" name="product-group" value="weight">
-              <span class="desired-program__control-mark"></span>
-              <span class="desired-program__control-span">Набор массы</span>
-            </label>
-          </li>
-          <li class="form-program__list-item desired-program">
-            <label class="desired-program__control">
-              <input class="desired-program__control-input" type="radio" name="product-group" value="advice">
-              <span class="desired-program__control-mark"></span>
-              <span class="desired-program__control-span">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form__wrapper">
+        <fieldset class="form-about">
+          <label class="form-about__pet">
+            Имя:*
+            <input class="form-about__pet-field" type="text" name="nickname" value="Барсик" required>
+          </label>
+          <label class="form-about__pet">
+            Вес (кг):*
+            <input class="form-about__pet-field" type="number" name="kg" value="7" required>
+          </label>
+          <label class="form-about__pet">
+            Возраст (лет):*
+            <input class="form-about__pet-field" type="number" name="years-old" value="7">
+          </label>
+        </fieldset>
+        <fieldset class="form-program">
+          <ul class="form-program__list">
+            <li class="form-program__list-item desired-program">
+              <label class="desired-program__control">
+                <input class="desired-program__control-input" type="radio" name="product-group" value="slim" checked>
+                <span class="desired-program__control-mark"></span>
+                <span class="desired-program__control-span">Похудение</span>
+              </label>
+            </li>
+            <li class="form-program__list-item desired-program">
+              <label class="desired-program__control">
+                <input class="desired-program__control-input" type="radio" name="product-group" value="weight">
+                <span class="desired-program__control-mark"></span>
+                <span class="desired-program__control-span">Набор массы</span>
+              </label>
+            </li>
+            <li class="form-program__list-item desired-program">
+              <label class="desired-program__control">
+                <input class="desired-program__control-input" type="radio" name="product-group" value="advice">
+                <span class="desired-program__control-mark"></span>
+                <span class="desired-program__control-span">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="form-contacts">
         <h2 class="title-form">Контактные данные (владельца кота)</h2>
         <div class="form-contacts__wrapper">

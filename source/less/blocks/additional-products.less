@@ -17,3 +17,20 @@
 .additional-products__item {
   margin-bottom: 31px;
 }
+
+@media (min-width: @tablet-width) {
+  .additional-products {
+    min-height: 672px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products {
+    min-height: 491px;
+  }
+
+  .additional-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
