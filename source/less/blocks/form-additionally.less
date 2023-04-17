@@ -15,3 +15,16 @@
 .form-additionally__list-item {
   margin-bottom: 13px;
 }
+
+@media (min-width: @tablet-width) {
+  .form-additionally__list {
+    display: grid;
+    grid-template-columns: 294px 294px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-additionally__list {
+    display: flex;
+  }
+}

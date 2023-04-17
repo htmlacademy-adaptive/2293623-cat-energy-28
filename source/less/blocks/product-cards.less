@@ -11,3 +11,25 @@
 .product-cards__item {
   margin-bottom: 19px;
 }
+
+@media (min-width: @tablet-width) {
+  .product-cards {
+    min-height: 2306px;
+  }
+
+  .product-cards__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-cards {
+    min-height: 1086px;
+  }
+
+  .product-cards__list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+  }
+}
