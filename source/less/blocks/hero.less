@@ -1,34 +1,52 @@
-.hero__backphoto {
+.hero {
+  position: relative;
   background-image: url("../../img/index-background-cat.jpg");
-  width: 320px;
-  height: 302px;
-  margin-bottom: 140px;
-  right: 20px;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
+  padding-top: 27px;
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    left: 0;
+    top: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    content: "";
+  }
+}
+
+.hero__backphoto {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   color: #ffffff;
   text-align: center;
   position: relative;
   box-sizing: border-box;
-
-  &::before {
-    position: absolute;
-    width: 320px;
-    height: 302px;
-    background: rgba(104, 183, 56, 0.85);
-    transform: translateX(-50%);
-    content: "";
-  }
 }
 
-.hero {
-  position: relative;
+.hero__backphoto-text {
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  margin-bottom: 25px;
+}
+
+.hero__backphoto-text-caption {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .hero__image {
-  position: absolute;
-  transform: translateY(-102%);
+  position: relative;
 }
 
 .hero__button {
@@ -36,16 +54,89 @@
   min-width: 280px;
   text-align: center;
   box-sizing: border-box;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  padding: 7px 44px;
+  text-decoration: none;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
   .hero {
-    min-height: 872px;
+    background: none;
+    min-height: 874px;
+    padding-top: 62px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero__backphoto-text {
+    display: block;
+    margin-left: 88px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    max-width: 416px;
+    text-align: left;
+  }
+
+  .hero__backphoto-text-caption {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 88px;
+    color: #000000;
+    max-width: 283px;
+    margin-bottom: 20px;
+  }
+
+  .hero__image {
+    width: 709px;
+    height: 609px;
+    position: relative;
+  }
+
+  .hero__button {
+    display: flex;
+    position: absolute;
+    max-width: 244px;
+    width: 100%;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    top: 316px;
+    left: 91px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
   .hero {
-    min-height: 585px;
+    position: relative;
+    background-image: url("../../img/index-background-cat.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    background-position: top right;
+    padding-top: 27px;
+
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 302px;
+      left: 0;
+      top: 0;
+      background-color: rgba(104, 183, 56, 0.85);
+      content: "";
+    }
   }
 }

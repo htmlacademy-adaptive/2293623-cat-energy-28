@@ -2,6 +2,24 @@
   background: #f2f2f2;
 }
 
+.program__image-circle {
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+
+.program__image-cat1 {
+  margin-left: 7px;
+  margin-right: 26px;
+}
+
+.program__image-cat2 {
+  margin-top: 11px;
+  margin-left: -10px;
+}
+
 .program__title {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -13,15 +31,125 @@
 
 .program__description {
   margin: 0;
+  margin-top: 25px;
   padding-right: 33px;
-  padding-bottom: 23px;
+  padding-bottom: 42px;
   color: #444444;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    border: 1px solid #d9d9d9;
+    bottom: 19px;
+  }
 }
 
 .program__link {
+  display: flex;
+  text-align: center;
+  align-items: center;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.program__link-arrow {
+  display: block;
+  margin-top: 2px;
+  margin-left: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 340px;
+  }
+
+  .program__image-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-right: 62px;
+    top: 92px;
+    right: 0;
+  }
+
+  .program__image-cat1 {
+    position: absolute;
+    width: 140px;
+    height: 194px;
+    margin: 0;
+    right: 30px;
+    bottom: 17px;
+  }
+
+  .program__image-cat2 {
+    position: absolute;
+    width: 268px;
+    height: 112px;
+    margin: 0;
+    right: -34px;
+    top: 50px;
+  }
+
+  .program__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    max-width: 340px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__title {
+    margin-left: 162px;
+  }
+
+  .program__image-circle {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program__image-cat1 {
+    position: absolute;
+    width: 70px;
+    height: 97px;
+    margin: 0;
+    right: 15px;
+    bottom: 9px;
+  }
+
+  .program__image-cat2 {
+    position: absolute;
+    width: 134px;
+    height: 56px;
+    margin: 0;
+    right: -15px;
+    top: 24px;
+  }
+
+  .program__description {
+    margin-top: 73px;
+    margin-bottom: 23px;
+    max-width: 457px;
+  }
 }

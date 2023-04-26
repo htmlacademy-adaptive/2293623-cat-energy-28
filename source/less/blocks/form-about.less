@@ -13,6 +13,60 @@
 }
 
 .form-about__pet {
-  display: block;
+  display: flex;
   margin-bottom: 14px;
+  align-items: center;
+}
+
+.form-about__pet-field {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin-left: 13px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  color: #444444;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-about {
+    margin-bottom: 72px;
+  }
+
+  .form-about__pet {
+    margin-left: 41px;
+    margin-right: 37px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-about__pet-field {
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-about {
+    margin-bottom: 69px;
+    margin-right: 80px;
+  }
+
+  .form-about__pet {
+    margin-left: 0;
+    margin-right: 0;
+    width: 569px;
+    margin-bottom: 20px;
+  }
 }

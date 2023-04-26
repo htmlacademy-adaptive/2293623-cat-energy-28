@@ -4,4 +4,52 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.another-product__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .another-product__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .another-product__text {
+    font-size: 16px;
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: 132px 93px;
+    text-align: right;
+    color: #444444;
+  }
+
+  .another-product__button {
+    max-width: 632px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .another-product__title {
+    margin-top: 25px;
+    margin-bottom: 26px;
+  }
+
+  .another-product__text {
+    display: flex;
+    align-items: center;
+    width: 285px;
+    margin-bottom: 0;
+  }
+
+  .another-product__button {
+    max-width: 244px;
+  }
 }

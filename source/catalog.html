@@ -45,16 +45,16 @@
         </defs>
       </svg>
     </a>
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="navigation-link" href="#">Каталог продукции</a>
           </li>
           <li class="site-list__item">
@@ -65,179 +65,215 @@
     </nav>
   </header>
 
-  <main class="main-catalog">
+  <main class="main">
     <h1 class="main-heading">Каталог продукции</h1>
-    <div class="product-cards">
+    <div class="product-cards main__section">
       <ul class="product-cards__list">
         <li class="product-cards__item offer-card">
-          <img src="img/card-chicken-500.jpg" width="68" height="86"
-            alt="Корм кэт энерджи в стакане со вкусом курицы 500 грамм.">
-          <span class="offer-card__title">Cat Energy PRO 500 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">500 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Курица</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">700 ₽</span>
-          </div>
-          <button type="button" class="button primary-button">Заказать</button>
-        </li>
-        <li class="product-cards__item offer-card">
-          <img src="img/card-chicken-1000.jpg" width="84" height="100"
-            alt="Корм кэт энерджи в стакане со вкусом курицы 1000 грамм.">
-          <span class="offer-card__title">Cat Energy PRO 1000 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">1000 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Курица</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">1000 ₽</span>
+          <div class="offer-card__wrapper">
+            <img class="offer-card__small" src="img/card-chicken-500.jpg" width="68" height="86"
+              alt="Корм кэт энерджи в стакане со вкусом курицы 500 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy PRO 500 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>500 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Курица</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>700 ₽</span>
+              </div>
+            </div>
           </div>
           <button type="button" class="button primary-button">Заказать</button>
         </li>
         <li class="product-cards__item offer-card">
-          <img src="img/card-fish-500.jpg" width="68" height="86"
-            alt="Корм кэт энерджи в стакане со вкусом рыбы 500 грамм.">
-          <span class="offer-card__title">Cat Energy PRO 500 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">500 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Рыба</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">700 ₽</span>
-          </div>
-          <button type="button" class="button primary-button">Заказать</button>
-        </li>
-        <li class="product-cards__item offer-card">
-          <img src="img/card-fish-1000.jpg" width="84" height="100"
-            alt="Корм кэт энерджи в стакане со вкусом рыбы 1000 грамм.">
-          <span class="offer-card__title">Cat Energy PRO 1000 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">1000 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Рыба</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">1000 ₽</span>
+          <div class="offer-card__wrapper">
+            <img class="offer-card__big" src="img/card-chicken-1000.jpg" width="84" height="100"
+              alt="Корм кэт энерджи в стакане со вкусом курицы 1000 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy PRO 1000 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>1000 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Курица</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>1000 ₽</span>
+              </div>
+            </div>
           </div>
           <button type="button" class="button primary-button">Заказать</button>
         </li>
         <li class="product-cards__item offer-card">
-          <img src="img/card-buckwheat-500.jpg" width="68" height="86"
-            alt="Корм кэт энерджи в стакане со вкусом гречки 500 грамм.">
-          <span class="offer-card__title">Cat Energy SLIM 500 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">500 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Гречка</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">400 ₽</span>
-          </div>
-          <button type="button" class="button primary-button">Заказать</button>
-        </li>
-        <li class="product-cards__item offer-card">
-          <img src="img/card-buckwheat-1000.jpg" width="84" height="100"
-            alt="Корм кэт энерджи в стакане со вкусом гречки 1000 грамм.">
-          <span class="offer-card__title">Cat Energy SLIM 1000 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">1000 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Гречка</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">700 ₽</span>
+          <div class="offer-card__wrapper">
+            <img class="offer-card__small" src="img/card-fish-500.jpg" width="68" height="86"
+              alt="Корм кэт энерджи в стакане со вкусом рыбы 500 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy PRO 500 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>500 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Рыба</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>700 ₽</span>
+              </div>
+            </div>
           </div>
           <button type="button" class="button primary-button">Заказать</button>
         </li>
         <li class="product-cards__item offer-card">
-          <img src="img/card-rice-500.jpg" width="68" height="86"
-            alt="Корм кэт энерджи в стакане со вкусом риса 500 грамм.">
-          <span class="offer-card__title">Cat Energy SLIM 500 г</span>
-          <div class="offer-card__text product-weight">
-            <span>Масса</span>
-            <span class="product-weight__gram">500 г</span>
-          </div>
-          <div class="offer-card__text product-taste">
-            <span>Вкус</span>
-            <span class="product-taste__view">Рис</span>
-          </div>
-          <div class="offer-card__text product-price">
-            <span>Цена</span>
-            <span class="product-price__rub">500 ₽</span>
+          <div class="offer-card__wrapper">
+            <img class="offer-card__big" src="img/card-fish-1000.jpg" width="84" height="100"
+              alt="Корм кэт энерджи в стакане со вкусом рыбы 1000 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy PRO 1000 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>1000 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Рыба</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>1000 ₽</span>
+              </div>
+            </div>
           </div>
           <button type="button" class="button primary-button">Заказать</button>
         </li>
         <li class="product-cards__item offer-card">
-          <span class="offer-card__more">Показать еще 100500 товаров</span>
-          <p class="offer-card__discription">На самом деле вкусов гораздо больше!</p>
-          <button type="button" class="button offer-card__button-more primary-button">Показать все</button>
+          <div class="offer-card__wrapper">
+            <img class="offer-card__small" src="img/card-buckwheat-500.jpg" width="68" height="86"
+              alt="Корм кэт энерджи в стакане со вкусом гречки 500 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy SLIM 500 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>500 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Гречка</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>400 ₽</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="button primary-button">Заказать</button>
+        </li>
+        <li class="product-cards__item offer-card">
+          <div class="offer-card__wrapper">
+            <img class="offer-card__big" src="img/card-buckwheat-1000.jpg" width="84" height="100"
+              alt="Корм кэт энерджи в стакане со вкусом гречки 1000 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy SLIM 1000 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>1000 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Гречка</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>700 ₽</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="button primary-button">Заказать</button>
+        </li>
+        <li class="product-cards__item offer-card">
+          <div class="offer-card__wrapper">
+            <img class="offer-card__small" src="img/card-rice-500.jpg" width="68" height="86"
+              alt="Корм кэт энерджи в стакане со вкусом риса 500 грамм.">
+            <div class="offer-card__wrap product">
+              <span class="offer-card__title">Cat Energy SLIM 500 г</span>
+              <div class="offer-card__text product__weight">
+                <span>Масса</span>
+                <span>500 г</span>
+              </div>
+              <div class="offer-card__text product__taste">
+                <span>Вкус</span>
+                <span>Рис</span>
+              </div>
+              <div class="offer-card__text product__price">
+                <span>Цена</span>
+                <span>500 ₽</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="button primary-button">Заказать</button>
+        </li>
+        <li class="product-cards__item offer-card-end">
+          <span class="offer-card-end__more">Показать еще 100500 товаров</span>
+          <p class="offer-card-end__discription-more">На самом деле вкусов гораздо больше!</p>
+          <button type="button" class="button offer-card-end__button-more primary-button">Показать все</button>
         </li>
       </ul>
     </div>
 
-    <section class="additional-products">
+    <section class="additional-products main__section">
       <h2 class="additional-products__text">Дополнительные товары</h2>
-      <div class="additional-products__wrapper">
+      <div class="additional-products__wrap">
         <ul class="additional-products__list">
           <li class="additional-products__item another-product">
-            <span class="another-product__title">Сахарозаменитель</span>
-            <div class="packaging">
-              <span>1 упаковка (100 г)</span>
-              <span>200 ₽</span>
+            <div class="additional-products__item-wrap">
+              <span class="another-product__title">Сахарозаменитель</span>
+              <div class="another-product__text">
+                <span>1 упаковка (100 г)</span>
+                <span>200 ₽</span>
+              </div>
             </div>
-            <button type="button" class="button primary-button">Заказать</button>
+            <button type="button" class="button primary-button another-product__button">Заказать</button>
           </li>
           <li class="additional-products__item another-product">
-            <span class="another-product__title">Питьевая вода</span>
-            <div class="packaging">
-              <span>5 литров</span>
-              <span>50 ₽</span>
+            <div class="additional-products__item-wrap">
+              <span class="another-product__title">Питьевая вода</span>
+              <div class="another-product__text">
+                <span>5 литров</span>
+                <span>50 ₽</span>
+              </div>
             </div>
-            <button type="button" class="button primary-button">Заказать</button>
+            <button type="button" class="button primary-button another-product__button">Заказать</button>
           </li>
           <li class="additional-products__item another-product">
-            <span class="another-product__title">Молоко</span>
-            <div class="packaging">
-              <span>1 литр</span>
-              <span>100 ₽</span>
+            <div class="additional-products__item-wrap">
+              <span class="another-product__title">Молоко</span>
+              <div class="another-product__text">
+                <span>1 литр</span>
+                <span>100 ₽</span>
+              </div>
             </div>
-            <button type="button" class="button primary-button">Заказать</button>
+            <button type="button" class="button primary-button another-product__button">Заказать</button>
           </li>
           <li class="additional-products__item another-product">
-            <span class="another-product__title">Витамины</span>
-            <div class="packaging">
-              <span>1 упаковка (30 г)</span>
-              <span>300 ₽</span>
+            <div class="additional-products__item-wrap">
+              <span class="another-product__title">Витамины</span>
+              <div class="another-product__text">
+                <span>1 упаковка (30 г)</span>
+                <span>300 ₽</span>
+              </div>
             </div>
-            <button type="button" class="button primary-button">Заказать</button>
+            <button type="button" class="button primary-button another-product__button">Заказать</button>
           </li>
         </ul>
         <div class="bonus">
@@ -246,15 +282,18 @@
       </div>
     </section>
 
+
     <section class="map">
-      <div class="map-wrapper">
-        <div class="cooperation cooperation-color">
-          <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <img class="map__location" src="img/map-mobile.jpg" width="320" height="362"
-          alt="Карта с координатами магазина">
+      <div class="cooperation">
+        <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <iframe class="map__google"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728533!2d30.32047247691179!3d59.93871647491523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682085403509!5m2!1sru!2sru"
+        width="320" height="362" allowfullscreen
+        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+      </iframe>
+      <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" alt="Карта с координатами магазина">
     </section>
   </main>
 
@@ -313,6 +352,7 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

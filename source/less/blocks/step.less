@@ -1,5 +1,80 @@
+.step {
+  position: relative;
+}
+
 .step__description {
   padding: 0;
   margin: 0;
   color: #444444;
+  width: 197px;
+}
+
+@media (min-width: @tablet-width) {
+  .step {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .step__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 247px;
+    margin-bottom: 57px;
+  }
+
+  .step__description-number-1::after {
+    content: "1";
+    position: absolute;
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    top: 0;
+    right: 25px;
+    z-index: -1;
+    color: #f2f2f2;
+  }
+
+  .step__description-number-2::after {
+    content: "2";
+    position: absolute;
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    color: #f2f2f2;
+  }
+
+  .step__description-number-3::after {
+    content: "3";
+    position: absolute;
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    top: 0;
+    right: -1px;
+    z-index: -1;
+    color: #f2f2f2;
+  }
+
+  .step__description-number-4::after {
+    content: "4";
+    position: absolute;
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    color: #f2f2f2;
+  }
 }
