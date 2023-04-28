@@ -1,25 +1,39 @@
+.offer-card__wrapper {
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.offer-card__small {
+  display: block;
+  width: 140px;
+  height: 112px;
+  padding: 14px 36px 12px;
+}
+
+.offer-card__big {
+  display: block;
+  width: 140px;
+  height: 112px;
+  padding: 11px 28px 1px;
+}
+
 .offer-card__title {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  display: block;
+  max-width: 76px;
+  margin-bottom: 18px;
 }
 
 .offer-card__text {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
   line-height: 16px;
   color: #444444;
-}
-
-.offer-card__more {
-  display: block;
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  text-align: center;
-  margin-bottom: 8px;
 }
 
 .offer-card__discription {
@@ -32,7 +46,65 @@
   margin-bottom: 21px;
 }
 
-.offer-card__button-more {
-  color: #444444;
-  background: #f2f2f2;
+@media (min-width: @tablet-width) {
+  .offer-card {
+    height: 430px;
+    background-color: #f2f2f2;
+    margin-bottom: 97px;
+  }
+
+  .offer-card__wrapper {
+    display: block;
+    margin-bottom: 33px;
+  }
+
+  .offer-card__title {
+    max-width: 159px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .offer-card__small {
+    display: block;
+    width: 168px;
+    height: 200px;
+    padding: 28px 3px 0 4px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    margin-top: -73px;
+  }
+
+  .offer-card__big {
+    display: block;
+    width: 168px;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    margin-top: -73px;
+  }
+
+  .offer-card__text {
+    width: 252px;
+    font-size: 16px;
+    margin-left: 36px;
+  }
+
+  .offer-card__discription {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 165px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer-card__text {
+    margin: 0 auto;
+    width: 168px;
+  }
 }

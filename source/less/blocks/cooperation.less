@@ -1,7 +1,7 @@
 .cooperation {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
+  padding: 26px 20px 26px;
 }
 
 .cooperation__text {
@@ -18,4 +18,37 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation {
+    padding: 56px 70px 55px;
+    background-color: #f2f2f2;
+  }
+
+  .cooperation__text {
+    width: 170px;
+  }
+
+  .cooperation__address {
+    font-size: 16px;
+    width: 160px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cooperation {
+    position: absolute;
+    width: 565px;
+    min-height: 198px;
+    padding: 56px 60px 56px 80px;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+  }
+
+  .cooperation__address {
+    text-align: left;
+  }
 }

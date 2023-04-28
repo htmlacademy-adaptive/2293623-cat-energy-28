@@ -1,25 +1,89 @@
 .bonus {
-  margin-top: 54px;
   position: relative;
   background-image: url("../../img/catalog-cat-bag.svg");
   width: 280px;
   height: 290px;
-  z-index: 1;
 
   &::before {
     position: absolute;
-    width: 280px;
-    height: 290px;
-    background: rgba(104, 183, 56, 0.85);
+    width: 100%;
+    min-height: 290px;
+    left: 0;
+    background-color: #68b738d9;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    background-image: url("../../img/icon_present.svg");
+    width: 78px;
+    height: 80px;
+    top: 59px;
+    left: 101px;
     content: "";
   }
 }
 
 .bonus__text {
-  position: absolute;
+  position: relative;
+  display: block;
+  top: 186px;
+  left: 42px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   width: 161px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .bonus {
+    background-repeat: no-repeat;
+    width: 709px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0 -328px;
+    margin-bottom: 76px;
+
+    &::before {
+      min-height: 200px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 82px;
+      top: 57px;
+      left: 77px;
+    }
+  }
+
+  .bonus__text {
+    top: 71px;
+    left: 398px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bonus {
+    width: 245px;
+    height: 289px;
+    background-position: 0;
+    margin-top: 80px;
+
+    &::before {
+      min-height: 289px;
+    }
+
+    &::after {
+      top: 56px;
+      left: 84px;
+    }
+  }
+
+  .bonus__text {
+    top: 185px;
+    left: 41px;
+    text-align: center;
+  }
 }

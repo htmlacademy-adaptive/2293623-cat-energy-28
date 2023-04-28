@@ -1,8 +1,19 @@
 .main-footer {
   display: block;
   position: relative;
-  right: 20px;
   background: #f2f2f2;
   padding-top: 40px;
-  width: 320px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

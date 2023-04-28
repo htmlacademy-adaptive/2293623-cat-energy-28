@@ -45,31 +45,29 @@
         </defs>
       </svg>
     </a>
-
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="navigation-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="navigation-link" href="#">Подбор программы</a>
+            <a class="navigation-link site-list__item--current" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="main-form-container">
+  <main class="main main-form-container">
     <h1 class="main-heading">Подбор программы</h1>
-    <form class="main-form-container__person form" action="https://echo.htmlacademy.ru/" method="get">
+    <form class="main-form-container__person form main__section" action="https://echo.htmlacademy.ru/" method="get">
       <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <div class="form__wrapper">
         <fieldset class="form-about">
@@ -116,12 +114,12 @@
         <h2 class="title-form">Контактные данные (владельца кота)</h2>
         <div class="form-contacts__wrapper">
           <label class="form-contacts__private">
-            <span class="e-mail">E-mail:*</span>
-            <input class="e-mail-form" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <span>E-mail:*</span>
+            <input class="form-contacts__private-data" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form-contacts__private">
-            <span class="phone">Телефон:*</span>
-            <input class="phone-form" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+            <span>Телефон:*</span>
+            <input class="form-contacts__private-data" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
       </fieldset>
@@ -169,19 +167,21 @@
           </ul>
         </fieldset>
       </div>
-      <button class="button primary-button" type="submit">отправить заявку</button>
-      <p class="form-footnote">* — Обязательные поля</p>
+      <button class="button form__button primary-button" type="submit">отправить заявку</button>
+      <p class="form__footnote">* — Обязательные поля</p>
     </form>
 
     <section class="map">
-      <div class="map-wrapper">
-        <div class="cooperation cooperation-color">
-          <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <img class="map__location" src="img/map-mobile.jpg" width="320" height="362"
-          alt="Карта с координатами магазина">
+      <div class="cooperation">
+        <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <iframe class="map__google"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728533!2d30.32047247691179!3d59.93871647491523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682085403509!5m2!1sru!2sru"
+        width="320" height="362" allowfullscreen
+        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+      </iframe>
+      <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" alt="Карта с координатами магазина">
     </section>
   </main>
 
@@ -240,6 +240,7 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

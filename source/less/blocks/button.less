@@ -1,6 +1,20 @@
 .button {
   font-size: 16px;
   line-height: 20px;
-  min-width: 280px;
+  max-width: 280px;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    max-width: 248px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    max-width: 168px;
+    width: 100%;
+  }
 }

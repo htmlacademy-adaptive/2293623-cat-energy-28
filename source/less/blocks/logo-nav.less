@@ -1,13 +1,32 @@
 .logo-nav {
-  display: block;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  @media (min-width: @tablet-width) {
-    height: 54px;
-    width: 174px;
+.logo-nav__image {
+  margin-right: 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-nav {
+    height: 52px;
+    max-width: 174px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  @media (min-width: @desktop-width) {
+  .logo-nav__image {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-nav {
     height: 109px;
   }
 }

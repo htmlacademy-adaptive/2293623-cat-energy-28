@@ -8,3 +8,59 @@
 .form-comment__wrapper {
   margin-top: 37px;
 }
+
+.form-comment__write-your {
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 12px;
+  width: 100%;
+  min-height: 150px;
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-comment {
+    margin-bottom: 65px;
+  }
+
+  .form-comment__wrapper {
+    margin-top: 76px;
+    margin-left: 40px;
+    margin-right: 37px;
+  }
+
+  .form-comment__write-your {
+    padding-right: 19px;
+    width: 100%;
+    min-height: 174px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-comment {
+    margin-bottom: 67px;
+  }
+
+  .form-comment__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

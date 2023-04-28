@@ -1,7 +1,21 @@
-.copyright__link-academy {
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.copyright__link-academy {
   font-size: 16px;
   line-height: 19px;
   color: #444444;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link-academy {
+    margin-right: 28px;
+  }
 }
