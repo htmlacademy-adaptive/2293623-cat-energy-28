@@ -32,6 +32,20 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 478px;
+    max-width: 600px;
+  }
+
+  .site-list__item--current-color::before {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    bottom: 0;
+    z-index: 3;
+    content: "";
+  }
+
+  .site-list__item-color {
+    color: #ffffff;
   }
 }

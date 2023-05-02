@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-.form-program__list-item {
+.form-program__list-item:not(:last-child) {
   margin-bottom: 13px;
 }
 
@@ -23,13 +23,13 @@
   }
 
   .form-program__list {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 28px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     border: 1px solid #e7e7e7;
   }
 
-  .form-program__list-item {
+  .form-program__list-item:not(:last-child) {
     margin-bottom: 18px;
   }
 }
@@ -43,6 +43,5 @@
   .form-program__list {
     min-height: 200px;
     width: 568px;
-    padding-top: 25px;
   }
 }
