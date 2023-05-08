@@ -66,6 +66,7 @@
   .hero {
     background: none;
     padding-top: 62px;
+    min-height: 972px;
 
     &::before {
       display: none;
@@ -90,27 +91,28 @@
     margin-left: 88px;
     color: #000000;
     max-width: 283px;
-    margin-bottom: 20px;
+    margin-bottom: 49px;
   }
 
   .hero__image {
     width: 709px;
     height: 609px;
-    position: relative;
+    top: 263px;
+    z-index: -1;
+    position: absolute;
   }
 
   .hero__button {
-    position: absolute;
+    position: relative;
     max-width: 244px;
     width: 100%;
     min-height: 54px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 26px;
-    top: 316px;
-    left: 91px;
     text-align: center;
-    box-sizing: border-box;
+    margin-left: 91px;
+    z-index: 4;
   }
 }
 
@@ -161,8 +163,12 @@
     z-index: 4;
   }
 
+  .hero__backphoto-text-caption {
+    margin-bottom: 52px;
+    margin-left: 80px;
+  }
+
   .hero__button {
-    top: 346px;
-    left: 190px;
+    margin-left: 80px;
   }
 }

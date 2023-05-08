@@ -45,7 +45,13 @@
   background-color: #eaeaea;
 }
 
-.example__stat {
+.example__wrap-start {
+  display: flex;
+  justify-content: center;
+}
+
+.example__stat,
+.example__stat-price {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   margin: 0;
   margin-bottom: 20px;
@@ -97,37 +103,76 @@
   }
 
   .example__stat {
-    display: block;
     position: absolute;
+    right: 0;
     width: 174px;
     margin: 0;
     font-size: 20px;
     text-align: right;
     top: 260px;
+  }
+
+  .example__stat-price {
+    position: absolute;
     right: 0;
+    width: 174px;
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+    top: 289px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    min-height: 598px;
     width: 1440px;
     padding-top: 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 75px;
+
+    &::before {
+      position: absolute;
+      min-height: 462px;
+      height: 100%;
+      background-color: #eaeaea;
+      content: "";
+    }
   }
 
   .example__description {
     width: 436px;
   }
 
+  .example__wrap {
+    margin-bottom: 55px;
+  }
+
+  .example__wrap-start {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .example__stat {
     display: block;
-    position: absolute;
-    width: 366px;
+    position: relative;
+    width: 175px;
     margin: 0;
     font-size: 20px;
-    top: 420px;
-    left: -75px;
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+
+  .example__stat-price {
+    display: block;
+    position: relative;
+    width: 90px;
+    margin: 0;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    text-align: left;
   }
 }
