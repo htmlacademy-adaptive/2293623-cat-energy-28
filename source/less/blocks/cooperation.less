@@ -8,13 +8,18 @@
   margin: 0;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
+  max-width: 139px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 }
 
-.cooperation__address {
+.cooperation__address,
+.cooperation__address-city {
+  display: block;
   margin: 0;
+  max-width: 139px;
+  width: 100%;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
@@ -23,17 +28,26 @@
 @media (min-width: @tablet-width) {
   .cooperation {
     padding: 56px 70px 55px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
   }
 
   .cooperation__text {
-    width: 170px;
+    max-width: 170px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .cooperation__address {
     font-size: 16px;
-    width: 160px;
+    max-width: 160px;
     text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .cooperation__address-city {
+    font-size: 16px;
+    text-align: right;
+    max-width: 160px;
   }
 }
 
@@ -48,7 +62,8 @@
     background-color: #ffffff;
   }
 
-  .cooperation__address {
+  .cooperation__address,
+  .cooperation__address-city {
     text-align: left;
   }
 }

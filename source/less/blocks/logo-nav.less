@@ -11,6 +11,14 @@
   margin-right: 56px;
 }
 
+.logo-nav__tablet {
+  display: none;
+}
+
+.logo-nav__desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .logo-nav {
     height: 52px;
@@ -21,12 +29,28 @@
   }
 
   .logo-nav__image {
-    margin-right: 12px;
+    display: none;
+  }
+
+  .logo-nav__text {
+    display: none;
+  }
+
+  .logo-nav__tablet {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .logo-nav {
     height: 109px;
+  }
+
+  .logo-nav__tablet {
+    display: none;
+  }
+
+  .logo-nav__desktop {
+    display: block;
   }
 }
