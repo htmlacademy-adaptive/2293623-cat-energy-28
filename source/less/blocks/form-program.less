@@ -9,6 +9,17 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    bottom: -25px;
+    left: -20px;
+    width: 320px;
+    content: "";
+  }
 }
 
 .form-program__list-item:not(:last-child) {
@@ -27,6 +38,10 @@
     padding-left: 28px;
     padding-bottom: 30px;
     border: 1px solid #e7e7e7;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-program__list-item:not(:last-child) {

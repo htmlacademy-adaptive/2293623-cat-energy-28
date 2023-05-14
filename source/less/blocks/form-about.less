@@ -10,6 +10,17 @@
   padding: 0;
   margin: 0;
   margin-bottom: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    bottom: -10px;
+    left: -20px;
+    width: 320px;
+    content: "";
+  }
 }
 
 .form-about__pet {
@@ -41,6 +52,10 @@
 @media (min-width: @tablet-width) {
   .form-about {
     margin-bottom: 72px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-about__pet {

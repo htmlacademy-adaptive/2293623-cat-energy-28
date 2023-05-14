@@ -8,6 +8,7 @@
     "browser-sync": "2.27.7",
     "del": "^7.0.0",
     "gulp": "4.0.2",
+    "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-less": "5.0.0",
     "gulp-libsquoosh": "^1.1.2",
@@ -27,7 +28,7 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npx gulp"
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
