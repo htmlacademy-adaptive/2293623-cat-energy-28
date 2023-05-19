@@ -2,7 +2,19 @@
   padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.form-comment__line {
+  &::after {
+    position: absolute;
+    background-color: #68b738;
+    height: 2px;
+    width: 158px;
+    right: -20px;
+    top: 15px;
+    content: "";
+  }
 }
 
 .form-comment__wrapper {
@@ -37,6 +49,24 @@
     margin-bottom: 65px;
   }
 
+  .form-comment__line {
+    &::before {
+      position: absolute;
+      background-color: #68b738;
+      height: 2px;
+      width: 30px;
+      left: -60px;
+      top: 23px;
+      content: "";
+    }
+
+    &::after {
+      width: 478px;
+      right: -30px;
+      top: 22px;
+    }
+  }
+
   .form-comment__wrapper {
     margin-top: 76px;
     margin-left: 40px;
@@ -57,6 +87,20 @@
 @media (min-width: @desktop-width) {
   .form-comment {
     margin-bottom: 67px;
+  }
+
+  .form-comment__line {
+    &::before {
+      width: 70px;
+      left: -110px;
+      top: 25px;
+    }
+
+    &::after {
+      width: 1108px;
+      right: -110px;
+      top: 25px;
+    }
   }
 
   .form-comment__wrapper {

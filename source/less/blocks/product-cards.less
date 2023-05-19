@@ -1,5 +1,5 @@
 .product-cards {
-  margin-top: 49px;
+  margin-top: 60px;
 }
 
 .product-cards__list {
@@ -9,8 +9,12 @@
   margin-bottom: 6px;
 }
 
-.product-cards__item {
+.product-cards__item:not(:last-child) {
   margin-bottom: 44px;
+}
+
+.product-cards__item:last-child {
+  margin-bottom: 49px;
 }
 
 @media (min-width: @tablet-width) {

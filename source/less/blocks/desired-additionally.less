@@ -11,6 +11,15 @@
   cursor: pointer;
 }
 
+.desired-additionally__control:hover .desired-additionally__control-mark {
+  border: 1px solid #bababa;
+}
+
+.desired-additionally__control:active .desired-additionally__control-mark,
+.desired-additionally__control:active .desired-additionally__control-span {
+  opacity: 0.3;
+}
+
 .desired-additionally__control-mark {
   position: absolute;
   top: 0;
@@ -43,7 +52,7 @@
 
   .desired-additionally__control-mark {
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
     width: 40px;
     height: 40px;

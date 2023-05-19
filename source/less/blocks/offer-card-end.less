@@ -1,5 +1,5 @@
 .offer-card-end {
-  padding-top: 59px;
+  padding-top: 60px;
   position: relative;
 
   &::before {
@@ -8,8 +8,32 @@
     height: 30px;
     position: absolute;
     background-repeat: no-repeat;
-    top: 0;
+    top: 6px;
     left: 125px;
+    content: "";
+  }
+}
+
+.offer-card-end__wrap {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 320px;
+    top: -79px;
+    left: -20px;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 320px;
+    bottom: -20px;
+    left: -20px;
     content: "";
   }
 }
@@ -64,6 +88,18 @@
       height: 60px;
       top: 52px;
       left: 132px;
+    }
+  }
+
+  .offer-card-end__wrap {
+    position: relative;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
     }
   }
 

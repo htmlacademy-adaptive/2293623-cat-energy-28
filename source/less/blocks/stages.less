@@ -4,7 +4,6 @@
   margin-top: 40px;
   margin-bottom: 49px;
   padding-left: 80px;
-  padding-right: 20px;
 }
 
 .stages__list-item {
@@ -86,6 +85,17 @@
     margin-bottom: 10px;
     margin-top: 32px;
     padding: 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      background-color: #e6e6e6;
+      height: 1px;
+      width: 768px;
+      bottom: -9px;
+      left: -30px;
+      content: "";
+    }
   }
 
   .stages__list-item {
@@ -95,7 +105,7 @@
   }
 
   .stages__list-item.stages__list-item:nth-child(2n) {
-    margin-left: 153px;
+    margin-left: 136px;
   }
 
   .stages__list-item--leaf::after,
@@ -169,6 +179,10 @@
   .stages__list {
     display: flex;
     margin-bottom: 69px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .stages__list-item.stages__list-item:nth-child(2n) {

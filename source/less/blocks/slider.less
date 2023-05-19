@@ -12,17 +12,50 @@
   top: 0;
   z-index: 5;
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    background-color: #666666;
+    border-radius: 2px;
+    z-index: 1;
+    top: 0;
+    left: 20px;
+    content: "";
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgb(94, 170, 47, 0.6);
+  }
 }
 
-.slider__cat-slim {
+.slider__button-transform {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 108px;
+  left: 2px;
+  z-index: 2;
+}
+
+.slider__cats {
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .slider {
     background-color: #eaeaea;
+    min-height: 384px;
+  }
+
+  .slider__cats {
+    position: absolute;
+    top: -151px;
+    right: 0;
   }
 }
 
