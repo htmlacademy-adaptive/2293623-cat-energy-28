@@ -8,7 +8,7 @@ import htmlmin from 'gulp-htmlmin';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
- import squoosh from 'gulp-libsquoosh';
+import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import { deleteAsync } from 'del';
@@ -26,25 +26,25 @@ export const styles = (done) => {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
-    done();
+  done();
 }
 
 //HTML
 
 const html = (done) => {
-   gulp.src('source/*.html')
+  gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
-    done();
+  done();
 }
 
 //Scripts
 
 const scripts = (done) => {
-   gulp.src('source/js/*.js')
+  gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
-    done()
+  done()
 }
 
 //Images
@@ -53,33 +53,33 @@ const optimizeImages = (done) => {
   gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
-    done()
+  done()
 }
 
 const copyImages = (done) => {
-   gulp.src('source/img/**/*.{jpg,png}')
+  gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
-    done()
+  done()
 }
 
 //WebP
 
 const createWebp = (done) => {
-   gulp.src('source/img/**/*.{jpg,png}')
+  gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
     }))
     .pipe(gulp.dest('build/img'))
-    done()
+  done()
 }
 
 //SVG
 
 const svg = (done) => {
-   gulp.src(['source/img/*.svg', '!sourse/img/icons/*svg'])
+  gulp.src(['source/img/*.svg', '!sourse/img/icons/*svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
-    done()
+  done()
 }
 
 const sprite = (done) => {
@@ -90,7 +90,7 @@ const sprite = (done) => {
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
-    done()
+  done()
 }
 
 //Copy

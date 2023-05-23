@@ -59,27 +59,34 @@
 }
 
 .form-contacts__private-data:hover {
-  border: 1px solid #cdcdcd;
+  border-color: #cdcdcd;
 }
 
 
-.form-contacts__private--icon-mail {
+.form-contacts__private-icon {
   position: absolute;
   right: 16px;
+  outline: none;
   fill: none;
   stroke: #000000;
 }
 
-.form-contacts__private-data:focus,
-.form-contacts__private--icon-mail:focus {
-  border: 2px solid #444444;
-  stroke: #68b738;
-  box-sizing: border-box;
+.form-contacts__private-data:focus {
+  border-color: #444444;
+  box-shadow: 0 0 0 1px #444444;
 }
 
-.form-contacts__private--icon-phone {
-  position: absolute;
-  right: 16px;
+.form-contacts__private-data:focus ~ .form-contacts__private-icon {
+  stroke: #68b738;
+}
+
+.form-contacts__private-data:invalid:not(:focus):not(:placeholder-shown) {
+  box-shadow: 0 0 0 1px #ff8282;
+  border-color: #ff8282;
+}
+
+.form-contacts__private-data:invalid:not(:focus):not(:placeholder-shown) ~ .form-contacts__private-icon {
+  stroke: #ff8282;
 }
 
 @media (min-width: @tablet-width) {
@@ -130,11 +137,7 @@
     padding-left: 19px;
   }
 
-  .form-contacts__private--icon-mail {
-    right: 20px;
-  }
-
-  .form-contacts__private--icon-phone {
+  .form-contacts__private-icon {
     right: 20px;
   }
 }

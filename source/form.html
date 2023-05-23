@@ -35,7 +35,7 @@
   </header>
   <main class="main">
     <h1 class="main__heading-form">Подбор программы</h1>
-    <form class="main-form-container__person form main__section" action="https://echo.htmlacademy.ru/" method="get">
+    <form class="form main__section" action="https://echo.htmlacademy.ru/" method="get">
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <div class="form__wrapper">
         <fieldset class="form-about">
@@ -81,17 +81,17 @@
             <span class="form-contacts__private-mail">E-mail:*</span>
             <input class="form-contacts__private-data" type="email" name="email" placeholder="kuklachev@gmail.com"
               required>
-              <svg class="form-contacts__private--icon-mail" width="20" height="20">
-                <use href="./img/sprite.svg#icon-e-mail"></use>
-              </svg>
+            <svg class="form-contacts__private-icon" width="20" height="20">
+              <use href="./img/sprite.svg#icon-e-mail"></use>
+            </svg>
           </label>
           <label class="form-contacts__private">
             <span>Телефон:*</span>
             <input class="form-contacts__private-data" type="text" name="phone" placeholder="8 (960) 900-60-90"
               required>
-              <svg class="form-contacts__private--icon-phone" width="20" height="20">
-                <use href="./img/sprite.svg#icon-phone"></use>
-              </svg>
+            <svg class="form-contacts__private-icon" width="20" height="20">
+              <use href="./img/sprite.svg#icon-phone"></use>
+            </svg>
           </label>
         </div>
       </fieldset>
@@ -123,8 +123,9 @@
             <li class="form-additionally__list-item desired-additionally">
               <label class="desired-additionally__control">
                 <input class="visually-hidden desired-additionally__control-input" type="checkbox" name="milk"> <span
-                  class="desired-additionally__control-mark"></span> <span
-                  class="desired-additionally__control-span">Молоко</span></label>
+                  class="desired-additionally__control-mark"></span>
+                  <span class="desired-additionally__control-span">Молоко</span>
+                </label>
             </li>
             <li class="form-additionally__list-item desired-additionally">
               <label class="desired-additionally__control">
@@ -167,7 +168,7 @@
         <li class="social__list-item">
           <a class="social__link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в вконтакте.</span>
-            <svg class="social__link--vkontakte" width="28" height="17">
+            <svg class="social__link-vkontakte" width="28" height="17">
               <use href="./img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
@@ -175,7 +176,7 @@
         <li class="social__list-item">
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Мы в Ютубе.</span>
-            <svg class="social__link--youtube" width="25" height="19">
+            <svg class="social__link-youtube" width="25" height="19">
               <use href="./img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -183,7 +184,7 @@
         <li class="social__list-item">
           <a class="social__link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Мы в Телеграме</span>
-            <svg class="social__link--telegram" width="21" height="18">
+            <svg class="social__link-telegram" width="21" height="18">
               <use href="./img/sprite.svg#icon-tg"></use>
             </svg>
           </a>
