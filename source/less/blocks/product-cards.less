@@ -25,7 +25,8 @@
   .product-cards__list {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px;
+    gap: 97px 59px;
+    margin-bottom: 18px;
   }
 
   .product-cards__item {
@@ -37,6 +38,15 @@
   .product-cards__list {
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 144px 80px;
+    gap: 143px 80px;
+    margin-bottom: 78px;
   }
+
+  .product-cards__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .product-cards__item:not(:last-child) {
+    margin-bottom: 0;
+}
 }

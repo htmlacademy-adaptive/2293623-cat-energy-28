@@ -34,7 +34,7 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="main-heading">Подбор программы</h1>
+    <h1 class="main__heading-form">Подбор программы</h1>
     <form class="main-form-container__person form main__section" action="https://echo.htmlacademy.ru/" method="get">
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <div class="form__wrapper">
@@ -139,9 +139,12 @@
       <p class="form__footnote">* — Обязательные поля</p>
     </form>
     <section class="map">
-      <div class="cooperation">
-        <p class="cooperation__text">Приглашаем<br>к сотрудничеству дилеров!</p>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="cooperation cooperation-color">
+        <p class="cooperation__text">Приглашаем <br> к сотрудничеству дилеров!</p>
+        <div class="cooperation__wrap">
+          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="cooperation__address-city">Санкт-Петербург</p>
+        </div>
       </div>
       <iframe class="map__google"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728533!2d30.32047247691179!3d59.93871647491523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682085403509!5m2!1sru!2sru"
@@ -151,12 +154,14 @@
     </section>
   </main>
   <footer class="main-footer">
-    <svg class="footer-logo__mobile" width="129" height="24">
-      <use href="./img/sprite.svg#footer-logo-mobile"></use>
-    </svg>
-    <svg class="footer-logo__tablet" width="143" height="27">
-      <use href="./img/sprite.svg#footer-logo-tablet"></use>
-    </svg>
+    <div class="footer-logo">
+      <svg class="footer-logo__mobile" width="129" height="24">
+        <use href="./img/sprite.svg#footer-logo-mobile"></use>
+      </svg>
+      <svg class="footer-logo__tablet footer-logo__tablet-position" width="143" height="27">
+        <use href="./img/sprite.svg#footer-logo-tablet"></use>
+      </svg>
+    </div>
     <div class="main-footer__social social">
       <ul class="social__list">
         <li class="social__list-item">

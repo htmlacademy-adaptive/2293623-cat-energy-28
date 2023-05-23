@@ -51,8 +51,8 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/glass-desktop.png, img/glass-desktop-2x.png 2x">
           <source media="(min-width: 769px)" srcset="img/glass-tablet.png, img/glass-tablet-2x.png 2x">
-          <img class="hero__image" src="img/glass-mobile.png" width="280" height="270" srcset="img/glass-mobile-2x.png 2x"
-            alt="Корм кэт энерджи в стакане со вкусом курицы.">
+          <img class="hero__image" src="img/glass-mobile.png" width="280" height="270"
+            srcset="img/glass-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом курицы.">
         </picture>
         <a class="hero__button hero__button--active" href="form.html">Подобрать программу</a>
       </section>
@@ -118,21 +118,25 @@
       <section class="example main__section">
         <div class="example-wrapper">
           <h2 class="title-heading">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-            по 16 часов в день.</p>
-          <div class="example__wrap">
-            <div class="example__item">
-              <dt class="example__item-quantity">5 кг</dt>
-              <dd class="example__item-text example__item-text-place">снижение веса</dd>
+          <div class="example-wrapper__background">
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+              по 16 часов в день.</p>
+            <div class="example__wrap">
+              <div class="example__item">
+                <dt class="example__item-quantity">5 кг</dt>
+                <dd class="example__item-text example__item-text-place">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__item-quantity">60 дней</dt>
+                <dd class="example__item-text">затрачено времени</dd>
+              </div>
             </div>
-            <div class="example__item">
-              <dt class="example__item-quantity">60 дней</dt>
-              <dd class="example__item-text">затрачено времени</dd>
+            <div class="example__wrap-start"><span class="example__stat">Затраты на питание:</span>
+              <span class="example__stat-price">15 000 РУБ.</span>
             </div>
           </div>
-          <div class="example__wrap-start"><span class="example__stat">Затраты на питание:</span> <span
-              class="example__stat-price">15 000 РУБ.</span></div>
         </div>
         <div class="slider">
           <button class="slider__button" type="button">
@@ -141,9 +145,9 @@
             </svg>
           </button>
           <picture>
-          <source media="(min-width: 769px)" srcset="img/cats-tablet.png, img/cats-tablet-2x.png 2x">
-          <img class="slider__cats" src="img/cats-mobile.png" width="280" height="256" srcset="img/cats-mobile-2x.png 2x"
-            alt="Похудевший кот после перехода на корм кэт энерджи.">
+            <source media="(min-width: 769px)" srcset="img/cats-tablet.png, img/cats-tablet-2x.png 2x">
+            <img class="slider__cats" src="img/cats-mobile.png" width="280" height="256"
+              srcset="img/cats-mobile-2x.png 2x" alt="Похудевший кот после перехода на корм кэт энерджи.">
           </picture>
         </div>
       </section>
@@ -166,7 +170,7 @@
       <svg class="footer-logo__mobile" width="129" height="24">
         <use href="./img/sprite.svg#footer-logo-mobile"></use>
       </svg>
-      <svg class="footer-logo__tablet" width="143" height="27">
+      <svg class="footer-logo__tablet footer-logo__tablet-position" width="143" height="27">
         <use href="./img/sprite.svg#footer-logo-tablet"></use>
       </svg>
       <div class="main-footer__social social">

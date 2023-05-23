@@ -31,6 +31,7 @@
   text-transform: uppercase;
   color: #444444;
   position: relative;
+  box-sizing: border-box;
 }
 
 .form-contacts__private-mail {
@@ -57,17 +58,23 @@
   line-height: 18px;
 }
 
-.form-contacts__private:hover .form-contacts__private-data {
+.form-contacts__private-data:hover {
   border: 1px solid #cdcdcd;
 }
 
-.form-contacts__private:focus .form-contacts__private-data {
-  border: 2px solid #444444;
-}
 
 .form-contacts__private--icon-mail {
   position: absolute;
   right: 16px;
+  fill: none;
+  stroke: #000000;
+}
+
+.form-contacts__private-data:focus,
+.form-contacts__private--icon-mail:focus {
+  border: 2px solid #444444;
+  stroke: #68b738;
+  box-sizing: border-box;
 }
 
 .form-contacts__private--icon-phone {
@@ -77,7 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .form-contacts {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
   }
 
   .form-contacts__line {
@@ -86,8 +93,8 @@
       background-color: #68b738;
       height: 2px;
       width: 30px;
-      left: -60px;
-      top: 23px;
+      left: -70px;
+      top: 22px;
       content: "";
     }
 
@@ -99,35 +106,55 @@
   }
 
   .form-contacts__wrapper {
-    margin-top: 76px;
+    margin-top: 77px;
   }
 
   .form-contacts__private {
-    margin-left: 41px;
+    margin-left: 40px;
     margin-right: 36px;
+    margin-bottom: 21px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form-contacts__private-mail {
+    max-width: 63px;
   }
 
   .form-contacts__private-data {
     margin-left: 20px;
     font-size: 20px;
     line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 19px;
+  }
+
+  .form-contacts__private--icon-mail {
+    right: 20px;
+  }
+
+  .form-contacts__private--icon-phone {
+    right: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form-contacts {
+    margin-bottom: 66px;
+  }
+
   .form-contacts__line {
     &::before {
       width: 70px;
       left: -110px;
-      top: 25px;
+      top: 22px;
     }
 
     &::after {
       width: 778px;
       right: -110px;
-      top: 25px;
+      top: 22px;
     }
   }
 
