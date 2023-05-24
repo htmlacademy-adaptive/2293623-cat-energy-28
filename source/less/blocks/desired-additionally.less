@@ -11,6 +11,15 @@
   cursor: pointer;
 }
 
+.desired-additionally__control:hover .desired-additionally__control-mark {
+  border: 1px solid #bababa;
+}
+
+.desired-additionally__control:active .desired-additionally__control-mark,
+.desired-additionally__control:active .desired-additionally__control-span {
+  opacity: 0.3;
+}
+
 .desired-additionally__control-mark {
   position: absolute;
   top: 0;
@@ -33,17 +42,13 @@
     line-height: 30px;
   }
 
-  .form-additionally__list-item {
-    margin-bottom: 31px;
-  }
-
   .desired-additionally__control {
     padding-left: 60px;
   }
 
   .desired-additionally__control-mark {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 40px;
     height: 40px;

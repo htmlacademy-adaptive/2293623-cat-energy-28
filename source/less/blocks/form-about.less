@@ -9,7 +9,18 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 39px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    bottom: -11px;
+    left: -20px;
+    width: 320px;
+    content: "";
+  }
 }
 
 .form-about__pet {
@@ -18,48 +29,92 @@
   align-items: center;
 }
 
+.form-about__pet-weight {
+  white-space: pre-wrap;
+  max-width: 60px;
+  width: 100%;
+}
+
+.form-about__pet-age {
+  white-space: pre-wrap;
+  max-width: 99px;
+  width: 100%;
+}
+
 .form-about__pet-field {
   display: flex;
   width: 100%;
-  margin: 0;
-  margin-left: 13px;
+  margin: 0 0 0 13px;
   padding-left: 20px;
   padding-top: 14px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   color: #444444;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   cursor: pointer;
-  outline: none;
+  outline: 0;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+}
+
+.form-about__pet-field::-webkit-outer-spin-button,
+.form-about__pet-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form-about__pet-field:invalid {
+  border: 2px solid #ff8282;
 }
 
 @media (min-width: @tablet-width) {
   .form-about {
-    margin-bottom: 72px;
+    margin-bottom: 53px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-about__pet {
     margin-left: 41px;
     margin-right: 37px;
+    margin-bottom: 19px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form-about__pet-weight {
+    max-width: 76px;
+  }
+
+  .form-about__pet-age {
+    max-width: 124px;
   }
 
   .form-about__pet-field {
     font-size: 20px;
     line-height: 30px;
     color: #444444;
+    padding-top: 10px;
+    padding-left: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-about {
-    margin-bottom: 69px;
+    margin-bottom: 0;
     margin-right: 80px;
   }
 

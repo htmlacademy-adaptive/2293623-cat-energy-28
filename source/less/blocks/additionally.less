@@ -1,0 +1,47 @@
+.additionally__line {
+  &::after {
+    position: absolute;
+    background-color: #68b738;
+    height: 2px;
+    width: 136px;
+    right: -20px;
+    top: 15px;
+    content: "";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__line {
+    &::before {
+      position: absolute;
+      background-color: #68b738;
+      height: 2px;
+      width: 30px;
+      left: -70px;
+      top: 22px;
+      content: "";
+    }
+
+    &::after {
+      width: 446px;
+      right: -30px;
+      top: 22px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__line {
+    &::before {
+      width: 70px;
+      left: -110px;
+      top: 25px;
+    }
+
+    &::after {
+      width: 1078px;
+      right: -110px;
+      top: 25px;
+    }
+  }
+}

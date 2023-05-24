@@ -2,12 +2,12 @@
   padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 
 .form-additionally__list {
   margin: 0;
-  margin-top: 34px;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
 }
@@ -18,25 +18,28 @@
 
 @media (min-width: @tablet-width) {
   .form-additionally {
-    margin-bottom: 54px;
+    margin-bottom: 17px;
   }
 
   .form-additionally__list {
     display: grid;
     grid-template-columns: 344px 344px;
-    margin-top: 57px;
+    margin-top: 62px;
     margin-left: 40px;
+  }
+
+  .form-additionally__list-item {
+    margin-bottom: 42px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-additionally {
-    margin-bottom: 61px;
+    margin-bottom: 24px;
   }
 
   .form-additionally__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: 325px 325px 325px 325px;
+    margin-left: 0;
   }
 }

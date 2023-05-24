@@ -1,11 +1,51 @@
-.footer-logo {
+.footer-logo__mobile {
   display: block;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  cursor: pointer;
+  fill: #111111;
+
+  &:hover,
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
+.footer-logo__tablet {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .footer-logo {
-    margin: 0;
+  .footer-logo__mobile {
+    display: none;
+  }
+
+  .footer-logo__tablet {
+    display: block;
+    cursor: pointer;
+    fill: #111111;
+
+    &:hover,
+    &:focus {
+      fill: #3e3e3e;
+    }
+
+    &:active {
+      fill: #6b6b6b;
+    }
+  }
+
+  .footer-logo__tablet-position {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-logo__tablet {
+    margin-right: 20px;
   }
 }
