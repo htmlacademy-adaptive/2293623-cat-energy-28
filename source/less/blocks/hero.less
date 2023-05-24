@@ -32,7 +32,6 @@
   line-height: 36px;
   padding: 0;
   margin: 0;
-  margin-left: 16px;
   margin-bottom: 25px;
 }
 
@@ -43,6 +42,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 29px;
+  margin-right: 3px;
 }
 
 .hero__image {
@@ -51,23 +51,32 @@
 
 .hero__button {
   display: block;
-  min-width: 280px;
   text-align: center;
   box-sizing: border-box;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
-  padding: 7px 44px;
+  padding: 11px 44px;
+  margin-top: -2px;
   text-decoration: none;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #ffffff30;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .hero {
     background: none;
-    min-height: 874px;
-    padding-top: 62px;
+    padding-top: 64px;
+    min-height: 853px;
 
     &::before {
       display: none;
@@ -76,7 +85,7 @@
 
   .hero__backphoto-text {
     display: block;
-    margin-left: 88px;
+    margin-left: 87px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -89,54 +98,88 @@
     display: block;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 88px;
+    margin-left: 89px;
     color: #000000;
     max-width: 283px;
-    margin-bottom: 20px;
+    margin-bottom: 51px;
   }
 
   .hero__image {
     width: 709px;
     height: 609px;
-    position: relative;
+    top: 263px;
+    z-index: -1;
+    position: absolute;
   }
 
   .hero__button {
-    display: flex;
-    position: absolute;
+    position: relative;
     max-width: 244px;
     width: 100%;
     min-height: 54px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
-    top: 316px;
-    left: 91px;
-    align-items: center;
+    padding: 17px 26px;
     text-align: center;
-    box-sizing: border-box;
+    margin-left: 91px;
+    z-index: 4;
   }
 }
 
 @media (min-width: @desktop-width) {
   .hero {
     position: relative;
-    background-image: url("../../img/index-background-cat.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 720px;
-    height: 694px;
-    background-position: top right;
-    padding-top: 27px;
+    min-height: 589px;
+    padding-top: 118px;
 
     &::before {
+      display: block;
       position: absolute;
-      width: 100%;
-      height: 302px;
-      left: 0;
-      top: 0;
+      width: 50%;
+      max-width: 720px;
+      height: 696px;
+      right: 0;
+      left: auto;
+      top: -109px;
+      z-index: 1;
       background-color: rgba(104, 183, 56, 0.85);
       content: "";
     }
+
+    &::after {
+      position: absolute;
+      background-image: url("../../img/index-background-cat-desktop.jpg");
+      width: 720px;
+      height: 718px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top right;
+      top: -109px;
+      right: 0;
+      content: "";
+    }
+  }
+
+  .hero__backphoto-text {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
+
+  .hero__image {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    right: 330px;
+    top: 32px;
+    z-index: 4;
+  }
+
+  .hero__backphoto-text-caption {
+    margin-bottom: 52px;
+    margin-left: 80px;
+  }
+
+  .hero__button {
+    margin-left: 80px;
   }
 }

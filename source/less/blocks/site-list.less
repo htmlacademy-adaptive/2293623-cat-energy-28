@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.site-list__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     flex-direction: row;
@@ -15,6 +19,10 @@
   }
 
   .site-list__item {
+    border: none;
+  }
+
+  .site-list__item:last-child {
     border: none;
   }
 
@@ -32,6 +40,20 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 478px;
+    max-width: 600px;
+  }
+
+  .site-list__item--current-color::before {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    bottom: 0;
+    z-index: 3;
+    content: "";
+  }
+
+  .site-list__item-color {
+    color: #ffffff;
   }
 }

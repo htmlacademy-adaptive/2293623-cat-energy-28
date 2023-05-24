@@ -2,35 +2,50 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 52px;
 }
 
 .form-program__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    bottom: -25px;
+    left: -20px;
+    width: 320px;
+    content: "";
+  }
 }
 
-.form-program__list-item {
-  margin-bottom: 13px;
+.form-program__list-item:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .form-program {
     margin-left: 41px;
     margin-right: 37px;
-    margin-bottom: 75px;
+    margin-bottom: 63px;
   }
 
   .form-program__list {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 28px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     border: 1px solid #e7e7e7;
+
+    &::after {
+      display: none;
+    }
   }
 
-  .form-program__list-item {
-    margin-bottom: 18px;
+  .form-program__list-item:not(:last-child) {
+    margin-bottom: 13px;
   }
 }
 
@@ -41,8 +56,7 @@
   }
 
   .form-program__list {
-    min-height: 200px;
+    padding-bottom: 19px;
     width: 568px;
-    padding-top: 25px;
   }
 }

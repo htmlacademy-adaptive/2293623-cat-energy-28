@@ -5,13 +5,54 @@
   text-transform: uppercase;
 }
 
+.desired-additionally__control {
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+}
+
+.desired-additionally__control:hover .desired-additionally__control-mark {
+  border: 1px solid #bababa;
+}
+
+.desired-additionally__control:active .desired-additionally__control-mark,
+.desired-additionally__control:active .desired-additionally__control-span {
+  opacity: 0.3;
+}
+
+.desired-additionally__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.desired-additionally__control-input[type="checkbox"]:checked + .desired-additionally__control-mark {
+  background-image: url("../../img/chekmark-form.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: @tablet-width) {
   .desired-additionally {
     font-size: 20px;
     line-height: 30px;
   }
 
-  .desired-additionally__control-span {
-    margin-left: 20px;
+  .desired-additionally__control {
+    padding-left: 60px;
+  }
+
+  .desired-additionally__control-mark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff00;
   }
 }

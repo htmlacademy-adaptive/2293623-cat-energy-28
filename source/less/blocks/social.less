@@ -1,8 +1,7 @@
 .social {
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 20px;
-  width: 280px;
+  margin-bottom: 37px;
 }
 
 .social__list {
@@ -10,14 +9,42 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 132px;
-  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
+}
+
+.social__link-vkontakte {
+  margin-right: 25px;
+}
+
+.social__link-youtube {
+  margin-right: 29px;
+}
+
+.social__link-vkontakte,
+.social__link-youtube,
+.social__link-telegram {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b7384d;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social {
     margin-top: 0;
     margin-bottom: 0;
+    width: 132px;
+  }
+
+  .social__list {
+    margin-top: 7px;
   }
 }

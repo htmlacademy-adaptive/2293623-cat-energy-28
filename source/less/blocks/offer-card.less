@@ -1,6 +1,24 @@
+.offer-card {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 320px;
+    top: -20px;
+    left: -20px;
+    content: "";
+  }
+}
+
 .offer-card__wrapper {
   display: flex;
   margin-bottom: 13px;
+}
+
+.offer-card__wrap {
+  margin-top: 1px;
 }
 
 .offer-card__small {
@@ -8,6 +26,18 @@
   width: 140px;
   height: 112px;
   padding: 14px 36px 12px;
+}
+
+.offer-card__small-fish {
+  padding: 27px 36px 7px;
+}
+
+.offer-card__small-buckwheat {
+  padding: 30px 36px 4px;
+}
+
+.offer-card__small-rice {
+  padding: 24px 34px 4px;
 }
 
 .offer-card__big {
@@ -25,15 +55,15 @@
   color: #222222;
   display: block;
   max-width: 76px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .offer-card__text {
   display: flex;
-  width: 140px;
   justify-content: space-between;
-  line-height: 16px;
   color: #444444;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .offer-card__discription {
@@ -51,6 +81,10 @@
     height: 430px;
     background-color: #f2f2f2;
     margin-bottom: 97px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .offer-card__wrapper {
@@ -62,7 +96,7 @@
     max-width: 159px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -71,10 +105,8 @@
     display: block;
     width: 168px;
     height: 200px;
-    padding: 28px 3px 0 4px;
-    margin: 0 auto;
-    margin-bottom: 34px;
-    margin-top: -73px;
+    padding: 0;
+    margin: -73px auto 34px;
   }
 
   .offer-card__big {
@@ -88,9 +120,9 @@
   }
 
   .offer-card__text {
-    width: 252px;
     font-size: 16px;
     margin-left: 36px;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   .offer-card__discription {
@@ -106,5 +138,11 @@
   .offer-card__text {
     margin: 0 auto;
     width: 168px;
+  }
+
+  .offer-card__small,
+  .offer-card__big {
+    margin-top: -80px;
+    margin-bottom: 42px;
   }
 }

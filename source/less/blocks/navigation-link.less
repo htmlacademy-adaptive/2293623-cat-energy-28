@@ -5,11 +5,26 @@
   text-decoration: none;
   padding-top: 22px;
   padding-bottom: 24px;
+
+  &:hover,
+  &:focus {
+    color: #00000099;
+  }
+
+  &:active {
+    color: #0000004d;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .navigation-link {
     padding-top: 18px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation-link {
+    padding-bottom: 8px;
   }
 }

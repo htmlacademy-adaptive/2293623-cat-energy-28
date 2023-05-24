@@ -9,6 +9,10 @@
   width: 197px;
 }
 
+.step__description-br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .step {
     display: flex;
@@ -45,7 +49,7 @@
     font-size: 280px;
     line-height: 280px;
     top: 0;
-    right: 0;
+    right: 6px;
     z-index: -1;
     color: #f2f2f2;
   }
@@ -59,7 +63,7 @@
     font-size: 280px;
     line-height: 280px;
     top: 0;
-    right: -1px;
+    right: 2px;
     z-index: -1;
     color: #f2f2f2;
   }
@@ -73,8 +77,12 @@
     font-size: 280px;
     line-height: 280px;
     top: 0;
-    right: 0;
+    right: 2px;
     z-index: -1;
     color: #f2f2f2;
+  }
+
+  .step__description-br {
+    display: inline;
   }
 }
