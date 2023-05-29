@@ -3,9 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page-index">
@@ -14,11 +21,10 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="./img/icon-login-nav-desktop.svg">
         <source media="(min-width: 769px)" srcset="./img/icon-login-nav-tablet.svg">
-        <img class="logo-nav__image" src="./img/icon-login-nav-mobile.svg" width="191" height="38"
-          alt="Корм кэт энерджи в стакане со вкусом курицы.">
+        <img class="logo-nav__image" src="./img/icon-login-nav-mobile.svg" width="191" height="38" alt="Корм кэт энерджи в стакане со вкусом курицы.">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--nojs">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
@@ -38,11 +44,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-chicken-500-tablet.png, img/card-chicken-500-tablet-2x.png 2x"><img
-                  class="offer-card__small" src="img/card-chicken-500-mobile.png" width="68" height="86"
-                  srcset="img/card-chicken-500-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом курицы 500 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-chicken-500-tablet.webp, img/card-chicken-500-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-chicken-500-tablet.png, img/card-chicken-500-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-chicken-500-mobile.webp, img/card-chicken-500-mobile-2x.webp 2x">
+                <img class="offer-card__small" src="img/card-chicken-500-mobile.png" width="68" height="86" srcset="img/card-chicken-500-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом курицы 500 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -51,8 +56,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>500
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Курица</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Курица</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>700
                   ₽</span></div>
             </div>
@@ -63,11 +67,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-chicken-1000-tablet.png, img/card-chicken-1000-tablet-2x.png 2x"><img
-                  class="offer-card__big" src="img/card-chicken-1000-mobile.png" width="84" height="100"
-                  srcset="img/card-chicken-1000-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом курицы 1000 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-chicken-1000-tablet.webp, img/card-chicken-1000-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-chicken-1000-tablet.png, img/card-chicken-1000-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-chicken-1000-mobile.webp, img/card-chicken-1000-mobile-2x.webp 2x">
+                <img class="offer-card__big" src="img/card-chicken-1000-mobile.png" width="84" height="100" srcset="img/card-chicken-1000-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом курицы 1000 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -76,8 +79,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>1000
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Курица</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Курица</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>1000
                   ₽</span></div>
             </div>
@@ -88,11 +90,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-fish-500-tablet.png, img/card-fish-500-tablet-2x.png 2x">
-                <img class="offer-card__small offer-card__small-fish" src="img/card-fish-500-mobile.png" width="68"
-                  height="86" srcset="img/card-fish-500-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом рыбы 500 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-fish-500-tablet.webp, img/card-fish-500-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-fish-500-tablet.png, img/card-fish-500-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-fish-500-mobile.webp, img/card-fish-500-mobile-2x.webp 2x">
+                <img class="offer-card__small offer-card__small-fish" src="img/card-fish-500-mobile.png" width="68" height="86" srcset="img/card-fish-500-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом рыбы 500 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -101,8 +102,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>500
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Рыба</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Рыба</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>700
                   ₽</span></div>
             </div>
@@ -113,11 +113,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-fish-1000-tablet.png, img/card-fish-1000-tablet-2x.png 2x"><img
-                  class="offer-card__big" src="img/card-fish-1000-mobile.png" width="84" height="100"
-                  srcset="img/card-fish-1000-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом рыбы 1000 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-fish-1000-tablet.webp, img/card-fish-1000-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-fish-1000-tablet.png, img/card-fish-1000-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-fish-1000-mobile.webp, img/card-fish-1000-mobile-2x.webp 2x">
+                <img class="offer-card__big" src="img/card-fish-1000-mobile.png" width="84" height="100" srcset="img/card-fish-1000-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом рыбы 1000 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -126,8 +125,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>1000
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Рыба</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Рыба</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>1000
                   ₽</span></div>
             </div>
@@ -138,11 +136,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-buckwheat-500-tablet.png, img/card-buckwheat-500-tablet-2x.png 2x"><img
-                  class="offer-card__small offer-card__small-buckwheat" src="img/card-buckwheat-500-mobile.png"
-                  width="68" height="86" srcset="img/card-buckwheat-500-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом гречки 500 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-buckwheat-500-tablet.webp, img/card-buckwheat-500-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-buckwheat-500-tablet.png, img/card-buckwheat-500-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-buckwheat-500-mobile.webp, img/card-buckwheat-500-mobile-2x.webp 2x">
+                <img class="offer-card__small offer-card__small-buckwheat" src="img/card-buckwheat-500-mobile.png" width="68" height="86" srcset="img/card-buckwheat-500-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом гречки 500 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -151,8 +148,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>500
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Гречка</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Гречка</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>400
                   ₽</span></div>
             </div>
@@ -163,11 +159,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-buckwheat-1000-tablet.png, img/card-buckwheat-1000-tablet-2x.png 2x"><img
-                  class="offer-card__big" src="img/card-buckwheat-1000-mobile.png" width="84" height="100"
-                  srcset="img/card-buckwheat-1000-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом гречки 1000 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-buckwheat-1000-tablet.webp, img/card-buckwheat-1000-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-buckwheat-1000-tablet.png, img/card-buckwheat-1000-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-buckwheat-1000-mobile.webp, img/card-buckwheat-1000-mobile-2x.webp 2x">
+                <img class="offer-card__big" src="img/card-buckwheat-1000-mobile.png" width="84" height="100" srcset="img/card-buckwheat-1000-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом гречки 1000 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -176,8 +171,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>1000
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Гречка</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Гречка</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>700
                   ₽</span></div>
             </div>
@@ -188,11 +182,10 @@
           <div class="offer-card__wrapper">
             <a class="offer-card__wrapper-link" href="#">
               <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/card-rice-500-tablet.png, img/card-rice-500-tablet-2x.png 2x">
-                <img class="offer-card__small offer-card__small-rice" src="img/card-rice-500-mobile.png" width="68"
-                  height="86" srcset="img/card-rice-500-mobile-2x.png 2x"
-                  alt="Корм кэт энерджи в стакане со вкусом риса 500 грамм.">
+                <source media="(min-width: 769px)" type="image/webp" srcset="img/card-rice-500-tablet.webp, img/card-rice-500-tablet-2x.webp 2x">
+                <source media="(min-width: 769px)" srcset="img/card-rice-500-tablet.png, img/card-rice-500-tablet-2x.png 2x">
+                <source type="image/webp" srcset="img/card-rice-500-mobile.webp, img/card-rice-500-mobile-2x.webp 2x">
+                <img class="offer-card__small offer-card__small-rice" src="img/card-rice-500-mobile.png" width="68" height="86" srcset="img/card-rice-500-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом риса 500 грамм.">
               </picture>
             </a>
             <div class="offer-card__wrap product">
@@ -201,8 +194,7 @@
               </a>
               <div class="offer-card__text product__weight"><span class="offer-card__text-width">Масса</span> <span>500
                   г</span></div>
-              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span
-                  class="offer-card__text-width">Рис</span></div>
+              <div class="offer-card__text product__taste"><span class="offer-card__text-width">Вкус</span> <span class="offer-card__text-width">Рис</span></div>
               <div class="offer-card__text product__price"><span class="offer-card__text-width">Цена</span> <span>500
                   ₽</span></div>
             </div>
@@ -260,14 +252,15 @@
       </div>
       <iframe class="map__google"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728533!2d30.32047247691179!3d59.93871647491523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682085403509!5m2!1sru!2sru"
-        width="320" height="362" allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+        width="320" height="362" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
       </iframe>
       <picture>
+        <source media="(min-width: 1440px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop-2x.webp 2x">
+        <source media="(min-width: 769px)" type="image/webp" srcset="img/map-tablet.webp, img/map-tablet-2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg, img/map-desktop-2x.jpg 2x">
         <source media="(min-width: 769px)" srcset="img/map-tablet.jpg, img/map-tablet-2x.jpg 2x">
-        <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" srcset="img/map-mobile-2x.jpg 2x"
-          alt="Карта с координатами магазина">
+        <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile-2x.webp 2x">
+        <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" srcset="img/map-mobile-2x.jpg 2x" alt="Карта с координатами магазина">
       </picture>
     </section>
   </main>
