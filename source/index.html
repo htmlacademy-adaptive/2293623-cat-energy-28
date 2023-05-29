@@ -10,6 +10,9 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page-index">
@@ -19,8 +22,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="./img/icon-login-nav-desktop.svg">
           <source media="(min-width: 769px)" srcset="./img/icon-login-nav-tablet.svg">
-          <img class="logo-nav__image" src="./img/icon-login-nav-mobile.svg" width="191" height="38"
-            alt="Корм кэт энерджи в стакане со вкусом курицы.">
+          <img class="logo-nav__image" src="./img/icon-login-nav-mobile.svg" width="191" height="38" alt="Корм кэт энерджи в стакане со вкусом курицы.">
         </picture>
       </a>
       <nav class="main-nav main-nav--nojs">
@@ -49,10 +51,12 @@
           <p class="hero__backphoto-text-caption">Занялся собой? Займись котом!</p>
         </div>
         <picture>
+          <source media="(min-width: 1440px)" type="image/webp" srcset="img/glass-desktop.webp, img/glass-desktop-2x.webp 2x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="img/glass-tablet.webp, img/glass-tablet-2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/glass-desktop.png, img/glass-desktop-2x.png 2x">
           <source media="(min-width: 769px)" srcset="img/glass-tablet.png, img/glass-tablet-2x.png 2x">
-          <img class="hero__image" src="img/glass-mobile.png" width="280" height="270"
-            srcset="img/glass-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом курицы.">
+          <source type="image/webp" srcset="img/glass-mobile.webp, img/glass-mobile-2x.webp 2x">
+          <img class="hero__image" src="img/glass-mobile.png" width="280" height="270" srcset="img/glass-mobile-2x.png 2x" alt="Корм кэт энерджи в стакане со вкусом курицы.">
         </picture>
         <a class="hero__button hero__button--active" href="form.html">Подобрать программу</a>
       </section>
@@ -145,17 +149,16 @@
           </button>
           <div class="slider__cats-wrap">
             <picture>
-              <source media="(min-width: 769px)"
-                srcset="img/cat-slider-fat-tablet.png, img/cat-slider-fat-tablet-2x.png 2x">
-              <img class="slider__cats slider__cats--left" src="img/cat-slider-fat-mobile.png" width="280" height="256"
-                srcset="img/cat-slider-fat-mobile-2x.png 2x" alt="Похудевший кот после перехода на корм кэт энерджи.">
+              <source media="(min-width: 769px)" type="image/webp" srcset="img/cat-slider-fat-tablet.webp, img/cat-slider-fat-tablet-2x.webp 2x">
+              <source media="(min-width: 769px)" srcset="img/cat-slider-fat-tablet.png, img/cat-slider-fat-tablet-2x.png 2x">
+              <source type="image/webp" srcset="img/cat-slider-fat-mobile.webp, img/cat-slider-fat-mobile-2x.webp 2x">
+              <img class="slider__cats slider__cats--left" src="img/cat-slider-fat-mobile.png" width="280" height="256" srcset="img/cat-slider-fat-mobile-2x.png 2x" alt="Похудевший кот после перехода на корм кэт энерджи.">
             </picture>
             <picture>
-              <source media="(min-width: 769px)"
-                srcset="img/cat-slider-skinny-tablet.png, img/cat-slider-skinny-tablet-2x.png 2x">
-              <img class="slider__cats slider__cats--right" src="img/cat-slider-skinny-mobile.png" width="280"
-                height="256" srcset="img/cat-slider-skinny-mobile-2x.png 2x"
-                alt="Похудевший кот после перехода на корм кэт энерджи.">
+              <source media="(min-width: 769px)" type="image/webp" srcset="img/cat-slider-skinny-tablet.webp, img/cat-slider-skinny-tablet-2x.webp 2x">
+              <source media="(min-width: 769px)" srcset="img/cat-slider-skinny-tablet.png, img/cat-slider-skinny-tablet-2x.png 2x">
+              <source type="image/webp" srcset="img/cat-slider-skinny-mobile.webp, img/cat-slider-skinny-mobile-2x.webp 2x">
+              <img class="slider__cats slider__cats--right" src="img/cat-slider-skinny-mobile.png" width="280" height="256" srcset="img/cat-slider-skinny-mobile-2x.png 2x" alt="Похудевший кот после перехода на корм кэт энерджи.">
             </picture>
           </div>
         </div>
@@ -170,13 +173,14 @@
         </div>
         <iframe class="map__google"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728533!2d30.32047247691179!3d59.93871647491523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682085403509!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          width="320" height="362" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         <picture>
+          <source media="(min-width: 1440px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop-2x.webp 2x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="img/map-tablet.webp, img/map-tablet-2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg, img/map-desktop-2x.jpg 2x">
           <source media="(min-width: 769px)" srcset="img/map-tablet.jpg, img/map-tablet-2x.jpg 2x">
-          <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" srcset="img/map-mobile-2x.jpg 2x"
-            alt="Карта с координатами магазина">
+          <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile-2x.webp 2x">
+          <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" srcset="img/map-mobile-2x.jpg 2x" alt="Карта с координатами магазина">
         </picture>
       </section>
     </main>
@@ -229,7 +233,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/scripts.js"></script>
+  <script src="./js/scripts.js" defer></script>
 </body>
 
 </html>

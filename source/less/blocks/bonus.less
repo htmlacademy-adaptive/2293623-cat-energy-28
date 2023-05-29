@@ -5,70 +5,76 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/cat-bag-mobile-2x.jpg");
   }
-  background-size: contain;
+
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 58px;
+  padding-bottom: 43px;
 
-  &::before {
+  &::after {
     position: absolute;
     width: 100%;
-    min-height: 290px;
+    height: 100%;
+    top: 0;
     left: 0;
     background-color: #68b738d9;
     content: "";
   }
 
-  &::after {
-    position: absolute;
+  &::before {
+    display: block;
+    position: relative;
     background-image: url("../../img/icon_present.svg");
     width: 78px;
     height: 80px;
-    top: 59px;
-    left: 101px;
     content: "";
+    z-index: 1;
   }
 }
 
 .bonus__text {
   position: relative;
   display: block;
-  top: 187px;
-  left: 58px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  max-height: 103px;
   width: 161px;
   text-align: center;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
   .bonus {
     background-repeat: no-repeat;
     width: 709px;
-    height: 200px;
+    min-height: 200px;
     background-size: cover;
     background-position: 0 -328px;
     margin-bottom: 76px;
+    flex-direction: row;
+    gap: 265px;
+    padding-bottom: 60px;
+    padding-left: 77px;
 
-    &::before {
+    &::after {
       min-height: 200px;
     }
 
-    &::after {
+    &::before {
       width: 80px;
       height: 82px;
-      top: 58px;
-      left: 78px;
     }
   }
 
   .bonus__text {
-    top: 71px;
-    left: 422px;
     text-align: left;
   }
 }
@@ -76,23 +82,22 @@
 @media (min-width: @desktop-width) {
   .bonus {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     background-position: 0;
     margin-top: 80px;
-
-    &::before {
-      min-height: 289px;
-    }
+    padding-top: 55px;
+    padding-bottom: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 50px;
+    flex-direction: column;
 
     &::after {
-      top: 56px;
-      left: 84px;
+      min-height: 289px;
     }
   }
 
   .bonus__text {
-    top: 185px;
-    left: 41px;
     text-align: center;
   }
 }
