@@ -18,8 +18,17 @@
   border: 1px solid #bababa;
 }
 
+.desired-program__control:focus-within .desired-program__control-mark {
+  border: 1px solid #000000;
+}
+
 .desired-program__control:active .desired-program__control-mark,
 .desired-program__control:active .desired-program__control-span {
+  opacity: 0.3;
+}
+
+.desired-program__control:disabled .desired-program__control-mark,
+.desired-program__control:disabled .desired-program__control-span {
   opacity: 0.3;
 }
 

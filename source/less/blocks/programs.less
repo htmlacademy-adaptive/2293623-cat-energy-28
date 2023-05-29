@@ -27,8 +27,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .programs {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   .programs__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 82px;
   }

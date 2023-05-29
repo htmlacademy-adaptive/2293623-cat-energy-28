@@ -6,6 +6,7 @@
 }
 
 .desired-additionally__control {
+  display: flex;
   position: relative;
   padding-left: 46px;
   cursor: pointer;
@@ -13,6 +14,10 @@
 
 .desired-additionally__control:hover .desired-additionally__control-mark {
   border: 1px solid #bababa;
+}
+
+.desired-additionally__control:focus-within .desired-additionally__control-mark {
+  border: 1px solid #000000;
 }
 
 .desired-additionally__control:active .desired-additionally__control-mark,
@@ -28,6 +33,12 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
+}
+
+.desired-additionally__control-span {
+  display: block;
+  margin-top: 5px;
+  max-width: 210px;
 }
 
 .desired-additionally__control-input[type="checkbox"]:checked + .desired-additionally__control-mark {
@@ -54,5 +65,9 @@
     height: 40px;
     border: 1px solid #cdcdcd;
     background-color: #ffffff00;
+  }
+
+  .desired-additionally__control-span {
+    margin-top: 0;
   }
 }

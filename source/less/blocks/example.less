@@ -9,14 +9,14 @@
 .example__description {
   margin: 0;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   color: #444444;
 }
 
 .example__wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 19px;
+  margin-bottom: 4px;
 }
 
 .example__item {
@@ -75,14 +75,14 @@
 
   .example__description {
     margin-top: 63px;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 24px;
   }
 
   .example__wrap {
     width: 329px;
-    margin-bottom: 250px;
+    margin-bottom: 235px;
   }
 
   .example__item-quantity {
@@ -109,9 +109,7 @@
   }
 
   .example__stat {
-    position: absolute;
     right: 3px;
-    width: 174px;
     margin: 0;
     font-size: 20px;
     text-align: right;
@@ -119,25 +117,32 @@
   }
 
   .example__stat-price {
-    position: absolute;
     right: 0;
-    width: 174px;
     margin: 0;
     font-size: 20px;
     text-align: right;
     top: 289px;
   }
+
+  .example__wrap-start {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    justify-content: flex-start;
+    margin-top: 26px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    width: 1440px;
+    width: 100%;
     padding-top: 0;
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 0;
     min-height: 519px;
+    background: linear-gradient(#ffffff 25%, #f2f2f2 25%);
 
     &::before {
       position: absolute;
@@ -151,11 +156,11 @@
   .example__description {
     width: 432px;
     margin-top: 0;
-    margin-bottom: 69px;
+    margin-bottom: 55px;
   }
 
   .example__wrap {
-    margin-bottom: 55px;
+    margin-bottom: 41px;
   }
 
   .example__item-text {
@@ -166,6 +171,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 327px;
+    flex-direction: initial;
   }
 
   .example__stat {
