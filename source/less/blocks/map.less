@@ -3,12 +3,12 @@
 }
 
 .map__google {
+  position: absolute;
   border: none;
   display: block;
 }
 
 .map__location {
-  position: absolute;
   bottom: 0;
   z-index: -1;
 }
@@ -18,10 +18,20 @@
     width: 769px;
     height: 400px;
   }
+
+  .map__location {
+    width: 768px;
+    height: 396px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .map__google {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .map__location {
     width: 1440px;
     height: 400px;
   }

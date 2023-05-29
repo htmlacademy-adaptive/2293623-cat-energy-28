@@ -2,9 +2,20 @@
   position: relative;
 }
 
+@media (min-width: @tablet-width) {
+  .example-wrapper__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .example-wrapper {
     width: 327px;
+  }
+
+  .example-wrapper__wrap {
+    display: block;
   }
 
   .example-wrapper__background {

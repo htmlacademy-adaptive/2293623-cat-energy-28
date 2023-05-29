@@ -20,7 +20,7 @@
 
 .logo-nav__image {
   margin-right: 56px;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
 
   &:hover,
   &:focus {
@@ -30,14 +30,6 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.logo-nav__tablet {
-  display: none;
-}
-
-.logo-nav__desktop {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -54,20 +46,10 @@
   }
 
   .logo-nav__image {
-    display: none;
-  }
-
-  .logo-nav__tablet {
-    display: block;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
+    width: 174px;
+    height: 52px;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 }
 
@@ -80,20 +62,10 @@
     margin-bottom: -5px;
   }
 
-  .logo-nav__tablet {
-    display: none;
-  }
-
-  .logo-nav__desktop {
-    display: block;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
+  .logo-nav__image {
+    width: 202px;
+    height: 59px;
+    margin-bottom: -5px;
+    margin-top: 0;
   }
 }

@@ -6,12 +6,15 @@
 }
 
 .form-contacts__line {
+  display: block;
+  max-width: 190px;
+
   &::after {
     position: absolute;
     background-color: #68b738;
     height: 2px;
     width: 99px;
-    right: -20px;
+    right: -110px;
     top: 15px;
     content: "";
   }
@@ -95,6 +98,8 @@
   }
 
   .form-contacts__line {
+    max-width: 550px;
+
     &::before {
       position: absolute;
       background-color: #68b738;
@@ -107,7 +112,7 @@
 
     &::after {
       width: 145px;
-      right: -30px;
+      right: -150px;
       top: 22px;
     }
   }
@@ -156,7 +161,7 @@
 
     &::after {
       width: 778px;
-      right: -110px;
+      right: -782px;
       top: 22px;
     }
   }

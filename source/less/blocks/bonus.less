@@ -1,6 +1,13 @@
 .bonus {
   position: relative;
-  background-image: url("../../img/catalog-cat-bag.svg");
+  background-image: url("../../img/cat-bag-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat-bag-mobile-2x.jpg");
+  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 280px;
   height: 290px;
   margin-bottom: 35px;
@@ -33,6 +40,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  max-height: 103px;
   width: 161px;
   text-align: center;
 }

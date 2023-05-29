@@ -21,6 +21,11 @@
   margin-top: 1px;
 }
 
+.offer-card__wrapper-link,
+.offer-card__wrap-link {
+  text-decoration: none;
+}
+
 .offer-card__small {
   display: block;
   width: 140px;
@@ -66,6 +71,10 @@
   line-height: 16px;
 }
 
+.offer-card__text-width {
+  max-width: 140px;
+}
+
 .offer-card__discription {
   display: block;
   font-size: 12px;
@@ -78,7 +87,7 @@
 
 @media (min-width: @tablet-width) {
   .offer-card {
-    height: 430px;
+    min-height: 430px;
     background-color: #f2f2f2;
     margin-bottom: 97px;
 

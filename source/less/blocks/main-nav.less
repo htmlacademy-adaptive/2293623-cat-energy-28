@@ -1,5 +1,5 @@
 .main-nav {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -20,7 +20,7 @@
   background-color: #ffffff00;
 }
 
-.main-nav--closed .main-nav__toggle::after {
+.main-nav__toggle::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -31,7 +31,7 @@
   box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
 }
 
-.main-nav--closed .main-nav__toggle:active::after {
+.main-nav__toggle:active::after {
   background-color: fade(#8b8b8b, 30%);
   box-shadow:
     0 7px 0 0 fade(#8b8b8b, 30%),
@@ -57,6 +57,7 @@
 
   &::after {
     transform: rotate(-45deg);
+    box-shadow: none;
   }
 
   &:active::before,
@@ -79,9 +80,17 @@
   width: 100%;
 }
 
+.main-nav--nojs .main-nav__list {
+  position: relative;
+}
+
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .site-list__item {
     display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
   }
 }
 

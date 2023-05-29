@@ -16,28 +16,28 @@
   <div class="page-wrapper">
     <header class="main-header">
       <a class="logo-nav" href="index.html">
-        <svg class="logo-nav__image" width="191" height="38">
-          <use href="./img/sprite.svg#icon-login-nav-mobile"></use>
-        </svg>
-        <svg class="logo-nav__tablet" width="174" height="52">
-          <use href="./img/sprite.svg#icon-login-nav-tablet"></use>
-        </svg>
-        <svg class="logo-nav__desktop" width="202" height="60">
-          <use href="./img/sprite.svg#icon-login-nav-desktop"></use>
-        </svg>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/icon-login-nav-desktop.svg">
+          <source media="(min-width: 769px)" srcset="./img/icon-login-nav-tablet.svg">
+          <img class="logo-nav__image" src="./img/icon-login-nav-mobile.svg" width="191" height="38"
+            alt="Корм кэт энерджи в стакане со вкусом курицы.">
+        </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current site-list__item--current-color"><a
-                class="navigation-link navigation-link-color" href="#">Главная</a></li>
-            <li class="site-list__item"><a class="navigation-link navigation-link-color" href="catalog.html">Каталог
-                продукции</a></li>
-            <li class="site-list__item"><a class="navigation-link navigation-link-color" href="form.html">Подбор
-                программы</a></li>
+            <li class="site-list__item site-list__item--current site-list__item--current-color">
+              <a class="navigation-link navigation-link-color" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="navigation-link navigation-link-color" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="navigation-link navigation-link-color" href="form.html">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -69,10 +69,8 @@
                 <h3 class="program__title">Похудение</h3>
               </div>
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p><a
-                class="program__link">каталог slim <svg class="program__link-arrow" width="24" height="12">
-                  <use href="./img/sprite.svg#arrow"></use>
-                </svg></a>
+                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program__link program__link--arrow" href="#">каталог slim</a>
             </li>
             <li class="programs__list-item program">
               <div class="programs__wrap">
@@ -84,10 +82,8 @@
                 <h3 class="program__title">Набор массы</h3>
               </div>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-                Pro поможет вашему коту нарастить необходимые мышцы!</p><a class="program__link">каталог pro <svg
-                  class="program__link-arrow" width="24" height="12">
-                  <use href="./img/sprite.svg#arrow"></use>
-                </svg></a>
+                Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program__link program__link--arrow" href="#">каталог pro</a>
             </li>
           </ul>
         </div>
@@ -123,32 +119,45 @@
               Energy
               Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
               по 16 часов в день.</p>
-            <div class="example__wrap">
-              <div class="example__item">
-                <dt class="example__item-quantity">5 кг</dt>
-                <dd class="example__item-text example__item-text-place">снижение веса</dd>
+            <div class="example-wrapper__wrap">
+              <div class="example__wrap">
+                <dl class="example__item">
+                  <dt class="example__item-quantity">5 кг</dt>
+                  <dd class="example__item-text example__item-text-place">снижение веса</dd>
+                </dl>
+                <dl class="example__item">
+                  <dt class="example__item-quantity">60 дней</dt>
+                  <dd class="example__item-text">затрачено времени</dd>
+                </dl>
               </div>
-              <div class="example__item">
-                <dt class="example__item-quantity">60 дней</dt>
-                <dd class="example__item-text">затрачено времени</dd>
+              <div class="example__wrap-start"><span class="example__stat">Затраты на питание:</span>
+                <span class="example__stat-price">15 000 РУБ.</span>
               </div>
-            </div>
-            <div class="example__wrap-start"><span class="example__stat">Затраты на питание:</span>
-              <span class="example__stat-price">15 000 РУБ.</span>
             </div>
           </div>
         </div>
         <div class="slider">
           <button class="slider__button" type="button">
+            <span class="visually-hidden">Слайдер</span>
             <svg class="slider__button-transform" width="40" height="40">
               <use href="./img/sprite.svg#slider-button"></use>
             </svg>
           </button>
-          <picture>
-            <source media="(min-width: 769px)" srcset="img/cats-tablet.png, img/cats-tablet-2x.png 2x">
-            <img class="slider__cats" src="img/cats-mobile.png" width="280" height="256"
-              srcset="img/cats-mobile-2x.png 2x" alt="Похудевший кот после перехода на корм кэт энерджи.">
-          </picture>
+          <div class="slider__cats-wrap">
+            <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/cat-slider-fat-tablet.png, img/cat-slider-fat-tablet-2x.png 2x">
+              <img class="slider__cats slider__cats--left" src="img/cat-slider-fat-mobile.png" width="280" height="256"
+                srcset="img/cat-slider-fat-mobile-2x.png 2x" alt="Похудевший кот после перехода на корм кэт энерджи.">
+            </picture>
+            <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/cat-slider-skinny-tablet.png, img/cat-slider-skinny-tablet-2x.png 2x">
+              <img class="slider__cats slider__cats--right" src="img/cat-slider-skinny-mobile.png" width="280"
+                height="256" srcset="img/cat-slider-skinny-mobile-2x.png 2x"
+                alt="Похудевший кот после перехода на корм кэт энерджи.">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="map">
@@ -162,18 +171,25 @@
         <iframe class="map__google"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728533!2d30.32047247691179!3d59.93871647491523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682085403509!5m2!1sru!2sru"
           width="320" height="362" allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe><img
-          class="map__location" src="img/map-mobile.jpg" width="320" height="362" alt="Карта с координатами магазина">
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg, img/map-desktop-2x.jpg 2x">
+          <source media="(min-width: 769px)" srcset="img/map-tablet.jpg, img/map-tablet-2x.jpg 2x">
+          <img class="map__location" src="img/map-mobile.jpg" width="320" height="362" srcset="img/map-mobile-2x.jpg 2x"
+            alt="Карта с координатами магазина">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-logo">
-        <svg class="footer-logo__mobile" width="129" height="24">
-          <use href="./img/sprite.svg#footer-logo-mobile"></use>
-        </svg>
-        <svg class="footer-logo__tablet footer-logo__tablet-position" width="143" height="27">
-          <use href="./img/sprite.svg#footer-logo-tablet"></use>
-        </svg>
+        <a class="footer-logo__home" href="index.html">
+          <svg class="footer-logo__mobile" width="129" height="24">
+            <use href="./img/sprite.svg#footer-logo-mobile"></use>
+          </svg>
+          <svg class="footer-logo__tablet footer-logo__tablet-position" width="143" height="27">
+            <use href="./img/sprite.svg#footer-logo-tablet"></use>
+          </svg>
+        </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">

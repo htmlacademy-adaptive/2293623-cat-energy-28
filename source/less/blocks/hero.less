@@ -1,6 +1,11 @@
 .hero {
   position: relative;
   background-image: url("../../img/index-background-cat.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-background-cat-2x.jpg");
+  }
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -149,6 +154,11 @@
     &::after {
       position: absolute;
       background-image: url("../../img/index-background-cat-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-background-cat-desktop-2x.jpg");
+      }
+
       width: 720px;
       height: 718px;
       background-size: contain;
